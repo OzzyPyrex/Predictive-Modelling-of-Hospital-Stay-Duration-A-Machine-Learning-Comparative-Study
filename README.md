@@ -61,7 +61,7 @@ Make sure Python 3.x is installed, then install required libraries:
        jupyter notebook Major_Project.ipynb
 
 ## 👨‍💻 6. Authors
-- **Adithya Muralidharan K V** – a.kv1@universityofgalway.ie  
+- **Adithya Muralidharan K V** – adithyalekha12@gmail.com  
 - **Ruben Mathew** – r.mathew8@universityofgalway.ie  
 - **Vinod Rajan** – v.rajan2@universityofgalway.ie  
 
