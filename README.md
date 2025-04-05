@@ -1,98 +1,70 @@
 # Predictive Modelling of Hospital Stay Duration: A Machine Learning Comparative Study
 
-This repository contains the code and documentation for our MSc Postgraduate project in Business Analytics at the University of Galway. The project compares various machine learning algorithms to predict the length of hospital stay (LOS) and determine the most effective method for healthcare analytics.
+This repository contains code and documentation for an MSc Postgraduate project in Business Analytics at the University of Galway. The project compares multiple machine learning algorithms to predict the **Length of Stay (LOS)** in hospitals and aims to identify the most effective approach for healthcare analytics.
 
----
+## 📌 1. Introduction
+Predicting hospital length of stay is crucial for healthcare providers to efficiently allocate resources and improve patient outcomes. This project uses **Kaggle’s AV Healthcare Analytics II dataset** to build, evaluate, and compare the performance of various machine learning models.
 
-## 1. Introduction
+## 🎯 2. Research Objectives
+- **Predict LOS**: Forecast the hospital stay duration.
+- **Model Comparison**: Evaluate and compare ML algorithms using metrics such as accuracy, precision, recall, and F1-score.
+- **Data Preprocessing**: Handle missing values, encode categorical features, scale numerical data, and use SMOTE for class imbalance.
+- **Hyperparameter Tuning**: Optimize top models (e.g., CatBoost, XGBoost) for improved performance.
 
-Hospital length of stay prediction is essential for optimizing resource allocation and improving patient care. In this project, we utilize Kaggle’s AV Healthcare Analytics II dataset to develop and compare different predictive models. Our study evaluates traditional machine learning methods (such as Logistic Regression, Random Forest, Decision Trees, and k-NN) alongside advanced techniques (CatBoost, XGBoost, Gradient Boosting, and Neural Networks).
+## ⚙️ 3. Methodology
 
----
+### Data Preprocessing
+- Impute missing categorical values using mode.
+- Drop irrelevant features.
+- Label encode categorical variables.
+- Standardize numerical features.
+- Apply SMOTE for class imbalance.
 
-## 2. Research Objective
+### Exploratory Data Analysis (EDA)
+- Count plots, distribution plots, and heatmaps to explore data and feature relationships.
 
-- **Predict LOS:** Accurately forecast the hospital stay duration using multiple machine learning algorithms.
-- **Model Comparison:** Evaluate performance metrics such as accuracy, precision, recall, and F1-score to determine the best model.
-- **Data Preprocessing:** Implement comprehensive preprocessing including missing value imputation, categorical encoding, feature scaling, and applying SMOTE to address class imbalance.
-- **Hyperparameter Tuning:** Optimize top-performing models through RandomizedSearchCV for enhanced predictive performance.
+### Model Training & Evaluation
+- Train models: Logistic Regression, Decision Trees, Random Forest, k-NN, CatBoost, XGBoost, Gradient Boosting, and Neural Networks.
+- Evaluate with and without SMOTE.
+- Use metrics: Accuracy, Precision, Recall, F1-Score, Confusion Matrix.
 
----
+## 📁 4. Repository Contents
 
-## 3. Methodology
+    ├── Major_Project.ipynb       # Jupyter notebook with project workflow
+    ├── major_project.py          # Python script for model training and evaluation
+    ├── train_data.csv.zip        # Zipped training dataset (extract before use)
+    └── README.md                 # Project overview and instructions
 
-**Data Preprocessing:**  
-- Missing values in categorical variables are imputed using the mode.
-- Irrelevant columns are removed, and categorical variables are label-encoded.
-- Numerical features are standardized.
-
-**Exploratory Data Analysis (EDA):**  
-- Visualizations (count plots, distribution plots, and correlation heatmaps) are used to understand the data structure and relationships.
-
-**Model Training and Evaluation:**  
-- Multiple models are trained on the dataset both with and without SMOTE.
-- Performance is compared using confusion matrices, accuracy, precision, recall, and F1-score.
-- Hyperparameter tuning is performed on top models (XGBoost and CatBoost).
-
----
-
-## 4. Repository Contents
-
-├── major_project.py  
-├── Research Project - Final Deliverable – Research Manuscript.pdf  
-├── train_data.csv          # Dataset file (ensure this is placed in the repository)  
-└── README.md
-
-- **major_project.py:** Main Python script implementing data preprocessing, model training, evaluation, and visualization.
-- **Research Project - Final Deliverable – Research Manuscript.pdf:** Detailed project manuscript.
-- **train_data.csv:** Dataset file required for running the project (place in the repository root).
-
----
-
-## 5. Getting Started
+## 🚀 5. Getting Started
 
 ### Installation
-
-Make sure you have Python 3.x installed. Install the required packages using pip:
+Make sure Python 3.x is installed, then install required libraries:
 
     pip install catboost xgboost imbalanced-learn scikit-learn tensorflow numpy pandas matplotlib seaborn
 
-### Running the Project
+### Usage
 
-1. **Clone the Repository:**
-
+1. **Clone the Repository**:
+    
        git clone https://github.com/OzzyPyrex/Predictive-Modelling-of-Hospital-Stay-Duration-A-Machine-Learning-Comparative-Study.git
        cd Predictive-Modelling-of-Hospital-Stay-Duration-A-Machine-Learning-Comparative-Study
 
-2. **Place the Dataset:**
+2. **Extract the Dataset**:
+   Unzip `train_data.csv.zip` and ensure `train_data.csv` is in the repository root.
 
-   Ensure that the `train_data.csv` file is in the repository root (or update the file path in `major_project.py` if necessary).
-
-3. **Run the Main Script:**
-
+3. **Run the Script**:
+    
        python major_project.py
 
-Alternatively, you can run the project interactively in Google Colab or Jupyter Notebook.
+   Or use the interactive **Jupyter Notebook**:
+    
+       jupyter notebook Major_Project.ipynb
 
----
+## 👨‍💻 6. Authors
+- **Adithya Muralidharan K V** – a.kv1@universityofgalway.ie  
+- **Ruben Mathew** – r.mathew8@universityofgalway.ie  
+- **Vinod Rajan** – v.rajan2@universityofgalway.ie  
 
-## 6. Authors and Contact
-
-**Project Members:**
-
-- **Adithya Muralidharan K V**  
-  Email: a.kv1@universityofgalway.ie
-- **Ruben Mathew**  
-  Email: r.mathew8@universityofgalway.ie
-- **Vinod Rajan**  
-  Email: v.rajan2@universityofgalway.ie
-
----
-
-## 7. License
-
+## 📄 7. License
 This project is licensed under the [MIT License](LICENSE).
 
----
-
-For any questions, feedback, or contributions, please feel free to open an issue or submit a pull request. Enjoy exploring the project!
