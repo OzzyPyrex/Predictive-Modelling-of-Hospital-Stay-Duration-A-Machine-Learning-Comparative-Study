@@ -1,5 +1,5 @@
 # Predictive-Modelling-of-Hospital-Stay-Duration-A-Machine-Learning-Comparative-Study
-ABSTRACT
+## ABSTRACT
 This study explores the field of healthcare analytics with a particular focus on length of stay
 (LOS) prediction for hospitalised patients. Using Kaggle's AV Healthcare Analytics II dataset,
 which contains a wide range of patient characteristics, we investigate the use of different
