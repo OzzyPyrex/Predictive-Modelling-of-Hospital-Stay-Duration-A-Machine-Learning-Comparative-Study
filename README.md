@@ -59,6 +59,6 @@ Read the [methodology and data-provenance note](docs/methodology-and-provenance.
 
 This is a group MSc project. The public portfolio version intentionally omits collaborator contact details. Please retain appropriate attribution and obtain any needed permission before republishing shared work.
 
-## License
+## Reuse
 
-The repository is released under the existing [MIT License](LICENSE), subject to the data-source and third-party-library terms above.
+No standalone repository licence file is currently included. Please contact the maintainer before reusing the code, and review the data-source and third-party-library terms separately.
